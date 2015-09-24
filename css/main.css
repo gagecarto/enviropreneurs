@@ -1,0 +1,36 @@
+body { 
+	margin:0; 
+	padding:0; 
+}
+#map { 
+	position:absolute; 
+	top:0; 
+	bottom:0; 
+	width:100%; 
+}
+.leaflet-container {
+    background: #2d878f !important;  
+}
+
+.leaflet-popup-content-wrapper {
+  background:#2c3e50;
+  color:#fff;
+  font-size:16px;  
+  }
+.leaflet-popup-content-wrapper a {
+  color:rgba(255,255,255,0.5);
+  }
+.leaflet-popup-tip-container {
+  width:30px;
+  height:15px;
+  }
+.leaflet-popup-tip {
+  border-left:15px solid transparent;
+  border-right:15px solid transparent;
+  border-top:15px solid #2c3e50;
+  }
+  .popupHeaderClass{
+  	line-height:18px;  
+  	background-color: #D74F27;
+  	color:#000000;
+  }
