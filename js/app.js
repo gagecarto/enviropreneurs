@@ -18,16 +18,16 @@ function initialize(){
 	projectsLayers.eachLayer(function(layer) {
 		console.log(layer.feature.properties);
 
-		var content='<div class="popupHeaderClass"><span>'+layer.feature.properties.firstName+' '+layer.feature.properties.lastName+'<\/span><br>'+
-		            '<span>'+layer.feature.properties.name+'<\/span><br>'+
-		            '<span>'+layer.feature.properties.type+'<\/span></div><br>';
+		var content='<div class="popupHeaderClass"><span class="popupMainTitle">'+layer.feature.properties.firstName+' '+layer.feature.properties.lastName+'<\/span><br>'+
+		            '<span class="popupSubTitle">'+layer.feature.properties.name+'<\/span><br>'+
+		            '<span class="popupHeadText">'+layer.feature.properties.type+'<\/span></div>';
 
 		if(layer.feature.properties.image.length>1){
 			content+='<img src="'+layer.feature.properties.image+'" style="width:50%; height:auto; float:left; margin-right:15px;">'
 		}
 
 
-		content+='<p>'+layer.feature.properties.description+'</p>';		
+		content+='<div class="popupText">'+layer.feature.properties.description+'</div>';		
 
 		if(layer.feature.properties.video.length>1){
 			content+='<iframe src="http://www.youtube.com/embed/'+layer.feature.properties.youTubeId+'" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'

@@ -1,6 +1,7 @@
 body { 
 	margin:0; 
-	padding:0; 
+	padding:0;   
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 #map { 
 	position:absolute; 
@@ -11,11 +12,16 @@ body {
 .leaflet-container {
     background: #2d878f !important;  
 }
+.leaflet-popup-content{
+    padding: 0;
+    padding-top:0 !important;
+    padding-bottom:0 !important;            
+}
 
 .leaflet-popup-content-wrapper {
-  background:#2c3e50;
-  color:#fff;
-  font-size:16px;  
+  background:#E5EED1;  
+  color:#000;  
+  box-shadow: 0 0 10px #000000;
   }
 .leaflet-popup-content-wrapper a {
   color:rgba(255,255,255,0.5);
@@ -27,10 +33,32 @@ body {
 .leaflet-popup-tip {
   border-left:15px solid transparent;
   border-right:15px solid transparent;
-  border-top:15px solid #2c3e50;
+  border-top:15px solid #E5EED1;
   }
   .popupHeaderClass{
   	line-height:18px;  
   	background-color: #D74F27;
+    width: 100%;
   	color:#000000;
+    padding:10px;
+    margin-bottom: 5px;
   }
+  .popupMainTitle{
+    font-weight: bolder;
+    font-size:18px;  
+  }
+  .popupSubTitle{
+    font-weight: bold;
+    font-size:16px;  
+  }
+  .popupHeadText{
+
+  }
+  .popupInnerContent{
+
+  }
+  .popupText{
+    font-size:14px;          
+    padding: 10px;    
+  }
+
