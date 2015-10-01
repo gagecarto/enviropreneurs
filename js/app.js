@@ -1,9 +1,10 @@
 $(document).ready(function() {
-    initialize();
+    mapInit();
+    uiInit();
 });
 
 
-function initialize(){
+function mapInit(){
 	L.mapbox.accessToken = 'pk.eyJ1IjoiZW52aXJvcHJlbmV1cnMiLCJhIjoiY2lleWVuOWFtMGdicnM2bTAyZGtmMGd5dSJ9.-4bPr9T-xVLvszLWXEdhaQ';
 	
 	var map = L.mapbox.map('map', 'enviropreneurs.432d30f2')
@@ -38,20 +39,15 @@ function initialize(){
 		layer.bindPopup(content);
 	});
 
-
-
 ////end init/////
 }
 
-/*
-featureLayer.eachLayer(function(layer) {
 
-    // here you call `bindPopup` with a string of HTML you create - the feature
-    // properties declared above are available under `layer.feature.properties`
-    var content = '<h2>A ferry ride!<\/h2>' +
-        '<p>From: ' + layer.feature.properties.from + '<br \/>' +
-        'to: ' + layer.feature.properties.to + '<\/p>';
-    layer.bindPopup(content);
-});
+function uiInit(){
+	
+	$('#modalCloseButton').click(function() {
+        $('#modalWelcome').fadeOut();
+        $('#modal').fadeOut();
+    });
 
-*/
+}
