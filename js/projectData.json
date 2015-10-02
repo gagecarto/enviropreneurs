@@ -4,7 +4,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Enviropreneur Institute Alumni",
+        "type": "Institute Alumni",
         "name": "PERC Enviropreneur Institute",
         "firstName": "Neal",
         "lastName": "Doyle",
@@ -25,7 +25,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Enviropreneur Institute Alumni",
+        "type": "Institute Alumni",
         "name": "Stony Creek Colors",
         "firstName": "Sarah",
         "lastName": "Bellos",
@@ -46,7 +46,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Enviropreneur Institute Alumni",
+        "type": "Institute Alumni",
         "name": "Carman Ranch",
         "firstName": "Cory",
         "lastName": "Carman",
@@ -67,7 +67,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Enviropreneur Institute Alumni",
+        "type": "Institute Alumni",
         "name": "Vermejo Park Ranch",
         "firstName": "Jeremy",
         "lastName": "Gingrich",
@@ -88,7 +88,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Enviropreneur Institute Alumni",
+        "type": "Institute Alumni",
         "name": "lumenomics",
         "firstName": "Marti",
         "lastName": "Hoffer",
@@ -109,7 +109,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Enviropreneur Institute Alumni",
+        "type": "Institute Alumni",
         "name": "Closing the Coral Commons",
         "firstName": "Brett",
         "lastName": "Howell",
@@ -130,7 +130,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Enviropreneur Institute Alumni",
+        "type": "Institute Alumni",
         "name": "Rhino Ark Charitable Trust",
         "firstName": "Eric",
         "lastName": "Kihiu Ngure",
@@ -151,7 +151,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Enviropreneur Institute Alumni",
+        "type": "Institute Alumni",
         "name": "Clean Energy Venture Group",
         "firstName": "Michael",
         "lastName": "Robertson",
@@ -172,7 +172,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Enviropreneur Institute Alumni",
+        "type": "Institute Alumni",
         "name": "Agrarian Freedom Project",
         "firstName": "Paul",
         "lastName": "Schwennesen",
@@ -193,7 +193,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Enviropreneur Institute Alumni",
+        "type": "Institute Alumni",
         "name": "Fundacion Natura Bolivia",
         "firstName": "Maria Teresa",
         "lastName": "Vargas",
@@ -214,7 +214,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Enviropreneur Institute Alumni",
+        "type": "Institute Alumni",
         "name": "Tree Ring Pens",
         "firstName": "Dave",
         "lastName": "Wager",
@@ -235,7 +235,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Enviropreneur Institute Alumni",
+        "type": "Institute Alumni",
         "name": "SmartMarkets",
         "firstName": "Jamie",
         "lastName": "Workman",
@@ -256,7 +256,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Enviropreneur Institute Alumni",
+        "type": "Institute Alumni",
         "name": "Paso Pacífico",
         "firstName": "Wendy ",
         "lastName": "Purnell",

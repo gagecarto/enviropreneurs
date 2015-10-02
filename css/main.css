@@ -95,7 +95,11 @@ body {
   top:.4rem;
 }
 #headerSubTitle{
-  font-size:1.2rem;
+  font-size:1.8rem;
+  top:1.1rem;
+  color: #C9DAAC;
+  position: absolute;
+  right:0.5rem;
 }
 #map { 
 	position:absolute; 	
@@ -107,6 +111,15 @@ body {
   height: -webkit-calc(100% - 4rem);
   height: -o-calc(100% - 4rem);
   height: calc(100% - 4rem);
+}
+#credits{
+  position: absolute;
+  z-index: 6;
+  font-size: 0.8rem;
+  color:#FFFFFF;
+  position: absolute;
+  bottom: 14px;
+  left:80px;
 }
 .leaflet-container {
     background: #2d878f !important;  
