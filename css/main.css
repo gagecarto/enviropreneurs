@@ -47,6 +47,7 @@ body {
   color: #E6EED2;
   font-size: 1rem;
   margin: 1rem;
+  text-align:left;
 }
 .buttonClass{
   -moz-transition: all .15s ease-in;
