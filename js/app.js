@@ -3,6 +3,7 @@ $(document).ready(function() {
     uiInit();
 });
 
+var projectsLayer;
 
 function mapInit(){
 	L.mapbox.accessToken = 'pk.eyJ1IjoiZW52aXJvcHJlbmV1cnMiLCJhIjoiY2lleWVuOWFtMGdicnM2bTAyZGtmMGd5dSJ9.-4bPr9T-xVLvszLWXEdhaQ';
@@ -10,44 +11,74 @@ function mapInit(){
 	var map = L.mapbox.map('map', 'enviropreneurs.432d30f2')
 		.setView([40, -74.50], 9)	
 
-	var projectsLayers = L.mapbox.featureLayer().addTo(map);
+	projectsLayer = L.mapbox.featureLayer().addTo(map);
 
-	projectsLayers.setGeoJSON(projectData);
+	projectsLayer.setGeoJSON(projectData);
 
-	map.fitBounds(projectsLayers.getBounds());
+	map.fitBounds(projectsLayer.getBounds());
 
-	projectsLayers.eachLayer(function(layer) {
-		console.log(layer.feature.properties);
+	bindPopups();
 
-		var content='<div class="popupHeaderClass"><span class="popupMainTitle">'+layer.feature.properties.firstName+' '+layer.feature.properties.lastName+'<\/span><br>'+
-		            '<span class="popupSubTitle">'+layer.feature.properties.name+'<\/span><br>'+
-		            '<span class="popupHeadText">'+layer.feature.properties.type+'<\/span></div>';
+	function bindPopups(){
+		projectsLayer.eachLayer(function(layer) {
+			console.log(layer.feature.properties);
 
-		if(layer.feature.properties.image.length>1){
-			content+='<img src="'+layer.feature.properties.image+'" style="width:50%; height:auto; float:left; margin-right:15px;">'
-		}
+			var content='<div class="popupHeaderClass"><span class="popupMainTitle">'+layer.feature.properties.firstName+' '+layer.feature.properties.lastName+'<\/span><br>'+
+			            '<span class="popupSubTitle">'+layer.feature.properties.name+'<\/span><br>'+
+			            '<span class="popupHeadText">'+layer.feature.properties.type+'<\/span></div>';
 
+			if(layer.feature.properties.image.length>1){
+				content+='<img src="'+layer.feature.properties.image+'" style="width:50%; height:auto; float:left; margin-right:15px;">'
+			}			
 
-		content+='<div class="popupText">'+layer.feature.properties.description+'</div>';		
+			content+='<div class="popupText">'+layer.feature.properties.description+'</div>';					
 
-		if(layer.feature.properties.video.length>1){
-			content+='<iframe src="http://www.youtube.com/embed/'+layer.feature.properties.youTubeId+'" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
-		}
+			if(layer.feature.properties.url.length>1){
+				content+='<a href="'+layer.feature.properties.url+'" target="_blank" class="linkClass">     VIEW PROJECT PAGE</a><br>'
+			}
 
-		//console.log(content);
+			if(layer.feature.properties.video.length>1){
+				content+='<iframe src="http://www.youtube.com/embed/'+layer.feature.properties.youTubeId+'" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+			}
 
-		layer.bindPopup(content);
+			
+
+			//console.log(content);
+
+			layer.bindPopup(content);
+		});
+	}
+
+	function toggleLayers(layerToToggle){		
+		projectsLayer.setFilter(function(feature) {      
+	      if(layerToToggle=='all'){
+	      	return (feature);
+	      }
+	      else{
+	      	return (feature.properties.type == layerToToggle);
+	      }	      
+	    });
+	    bindPopups();	   	
+	}
+	/*
+	UI INITS
+	*/		
+	$('#modalCloseButton').click(function() {
+	    $('#modalWelcome').fadeOut();
+	    $('#modal').fadeOut();
 	});
 
+	var toggledButton='all';
+
+	$('.layerToggleButton').click(function() {
+	    $('#'+toggledButton+'').removeClass('toggled');      
+	    toggledButton=this.id;
+	    $(this).addClass('toggled');      
+	    toggleLayers(this.id);
+	});	
 ////end init/////
 }
 
 
-function uiInit(){
-	
-	$('#modalCloseButton').click(function() {
-        $('#modalWelcome').fadeOut();
-        $('#modal').fadeOut();
-    });
 
-}
+

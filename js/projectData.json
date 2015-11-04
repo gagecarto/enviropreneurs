@@ -4,7 +4,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Institute Alumni",
+        "type": "enviropreneur",
         "name": "PERC Enviropreneur Institute",
         "firstName": "Neal",
         "lastName": "Doyle",
@@ -25,7 +25,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Institute Alumni",
+        "type": "enviropreneur",
         "name": "Stony Creek Colors",
         "firstName": "Sarah",
         "lastName": "Bellos",
@@ -46,7 +46,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Institute Alumni",
+        "type": "enviropreneur",
         "name": "Carman Ranch",
         "firstName": "Cory",
         "lastName": "Carman",
@@ -67,7 +67,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Institute Alumni",
+        "type": "enviropreneur",
         "name": "Vermejo Park Ranch",
         "firstName": "Jeremy",
         "lastName": "Gingrich",
@@ -88,7 +88,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Institute Alumni",
+        "type": "enviropreneur",
         "name": "lumenomics",
         "firstName": "Marti",
         "lastName": "Hoffer",
@@ -109,7 +109,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Institute Alumni",
+        "type": "enviropreneur",
         "name": "Closing the Coral Commons",
         "firstName": "Brett",
         "lastName": "Howell",
@@ -130,7 +130,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Institute Alumni",
+        "type": "enviropreneur",
         "name": "Rhino Ark Charitable Trust",
         "firstName": "Eric",
         "lastName": "Kihiu Ngure",
@@ -151,7 +151,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Institute Alumni",
+        "type": "enviropreneur",
         "name": "Clean Energy Venture Group",
         "firstName": "Michael",
         "lastName": "Robertson",
@@ -172,7 +172,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Institute Alumni",
+        "type": "enviropreneur",
         "name": "Agrarian Freedom Project",
         "firstName": "Paul",
         "lastName": "Schwennesen",
@@ -193,7 +193,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Institute Alumni",
+        "type": "enviropreneur",
         "name": "Fundacion Natura Bolivia",
         "firstName": "Maria Teresa",
         "lastName": "Vargas",
@@ -214,7 +214,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Institute Alumni",
+        "type": "enviropreneur",
         "name": "Tree Ring Pens",
         "firstName": "Dave",
         "lastName": "Wager",
@@ -235,7 +235,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Institute Alumni",
+        "type": "enviropreneur",
         "name": "SmartMarkets",
         "firstName": "Jamie",
         "lastName": "Workman",
@@ -256,7 +256,7 @@ var projectData={
     {
       "type": "Feature",
       "properties": {
-        "type": "Institute Alumni",
+        "type": "enviropreneur",
         "name": "Paso Pacífico",
         "firstName": "Wendy ",
         "lastName": "Purnell",
@@ -273,6 +273,69 @@ var projectData={
           11.1
         ]
       }
-    }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "water",
+        "name": "TEST",
+        "firstName": "test ",
+        "lastName": "test",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores",
+        "url": "http://www.perc.org/articles/paso-pacificos-thin-green-line",
+        "image": "http://telias.free.fr/textures_tex/water/water_p2.jpg",
+        "video": "",
+        "youTubeId": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          -30
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "wildlife",
+        "name": "TEST",
+        "firstName": "test ",
+        "lastName": "test",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores",
+        "url": "http://www.perc.org/articles/paso-pacificos-thin-green-line",
+        "image": "https://pbs.twimg.com/profile_images/626343104354717696/vDKYfJ_h.jpg",
+        "video": "",
+        "youTubeId": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          -20
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "private",
+        "name": "TEST",
+        "firstName": "test ",
+        "lastName": "test",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores",
+        "url": "http://www.perc.org/articles/paso-pacificos-thin-green-line",
+        "image": "http://individual.icons-land.com/IconsPreview/POI/PNG/Circled/256x256/ForestConservation_Circle_Green.png",
+        "video": "",
+        "youTubeId": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          -10
+        ]
+      }
+    }    
   ]
 }

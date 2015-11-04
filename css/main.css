@@ -102,6 +102,48 @@ body {
   position: absolute;
   right:0.5rem;
 }
+#layerToggleHolder{
+  position: absolute;
+  z-index: 15;
+  bottom:40px;
+  left: 25px;
+  background-color: #2B694D;  
+  color: #fff;
+  text-align: center;
+  width: auto;
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px;    
+  border-radius: 4px;     
+}
+#toggleTitle{
+  font-size: 1.5rem;
+  font-weight: bold;
+  
+}
+.layerToggleButton{
+  background-color: #8FB270;
+  text-align: center;
+  margin: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  width: 20rem;
+  height: 2rem;
+  padding-top: 0.4rem;
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px;    
+  border-radius: 4px;     
+}
+.layerToggleButton:hover{
+    background-color: #68874B;    
+    cursor: pointer;
+}
+.toggled{
+  background-color: #D74F27;
+}
+.toggled:hover{
+    background-color: #D74F27;        
+}
 #map { 
 	position:absolute; 	
   z-index: 5;
@@ -163,7 +205,7 @@ body {
   .popupSubTitle{
     font-weight: bold;
     font-size:1.4rem;  
-  }
+  }  
   .popupHeadText{
 
   }
@@ -173,5 +215,14 @@ body {
   .popupText{
     font-size:1.2rem;          
     padding: .9rem;    
+  }
+  .linkClass{
+    font-weight: bold;
+    font-size:1.2rem;  
+    padding: .9rem;
+    position: relative;
+    width: 100%;
+    color:#000000 !important;
+    text-align: center;
   }
 
