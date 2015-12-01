@@ -1,9 +1,15 @@
 $(document).ready(function() {
     mapInit();
-    uiInit();
 });
 
 var projectsLayer;
+
+var categoryColors={
+		'alumni':'#E1E747',
+		'private':'#764EAC'
+	}
+
+
 
 function mapInit(){
 	L.mapbox.accessToken = 'pk.eyJ1IjoiZW52aXJvcHJlbmV1cnMiLCJhIjoiY2lleWVuOWFtMGdicnM2bTAyZGtmMGd5dSJ9.-4bPr9T-xVLvszLWXEdhaQ';
@@ -19,9 +25,11 @@ function mapInit(){
 
 	bindPopups();
 
+	
+
 	function bindPopups(){
 		projectsLayer.eachLayer(function(layer) {
-			console.log(layer.feature.properties);
+			//console.log(layer.feature.properties);
 
 			var content='<div class="popupHeaderClass"><span class="popupMainTitle">'+layer.feature.properties.firstName+' '+layer.feature.properties.lastName+'<\/span><br>'+
 			            '<span class="popupSubTitle">'+layer.feature.properties.name+'<\/span><br>'+
@@ -37,13 +45,15 @@ function mapInit(){
 				content+='<a href="'+layer.feature.properties.url+'" target="_blank" class="linkClass">     VIEW PROJECT PAGE</a><br>'
 			}
 
-			if(layer.feature.properties.video.length>1){
+			if(layer.feature.properties.youTubeId.length>1){
 				content+='<iframe src="http://www.youtube.com/embed/'+layer.feature.properties.youTubeId+'" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
-			}
-
+			}		
 			
-
-			//console.log(content);
+			//set icon color from categoryColors object
+			layer.setIcon(L.mapbox.marker.icon({
+                'marker-color': categoryColors[layer.feature.properties.type],
+            }));			
+			
 
 			layer.bindPopup(content);
 		});
@@ -70,7 +80,7 @@ function mapInit(){
 
 	var toggledButton='all';
 
-	$('.layerToggleButton').click(function() {
+	$('.active').click(function() {
 	    $('#'+toggledButton+'').removeClass('toggled');      
 	    toggledButton=this.id;
 	    $(this).addClass('toggled');      

@@ -134,7 +134,7 @@ body {
   -moz-border-radius: 4px;    
   border-radius: 4px;     
 }
-.layerToggleButton:hover{
+.active:hover{
     background-color: #68874B;    
     cursor: pointer;
 }
@@ -143,6 +143,9 @@ body {
 }
 .toggled:hover{
     background-color: #D74F27;        
+}
+.inactive{
+  background-color: #BFC5BA;
 }
 #map { 
 	position:absolute; 	
