@@ -4,6 +4,32 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:12px;
 }
+ @media (max-width: 900px) {
+   html {
+      font-size: 12px;
+    }    
+}
+
+  @media (max-width: 700px) {
+    html {
+      font-size: 11px;
+    }
+    
+  }
+
+  @media (max-width: 500px) {
+    html {
+      font-size: 10px;
+    }
+    
+  }
+
+  @media (max-width: 400px) {
+    html {
+      font-size: 10px;
+    }   
+  } 
+
 #modal{
   position: absolute;
   z-index: 1000;
@@ -220,12 +246,13 @@ body {
     padding: .9rem;    
   }
   .linkClass{
-    font-weight: bold;
+    font-weight: bolder !important;
     font-size:1.2rem;  
     padding: .9rem;
     position: relative;
     width: 100%;
-    color:#000000 !important;
+    color:#232E68 !important;
+    text-decoration: underline !important;
     text-align: center;
   }
 
