@@ -90,7 +90,7 @@ var projectData={
         "lastName": "Hoffer",
         "description": "Enviropreneur Marti Hoffer helps her clients squeeze every bit of natural light into the built environment. Her firm, lumenomics, offers a full range of sustainable products to help retail, commercial, institutional, and industrial buildings maximize natural light and conserve electricity.",
         "url": "http://www.perc.org/blog/meet-enviropreneurs-marti-hoffer-and-economics-light",
-        "image": "http://pbs.twimg.com/media/BzbzYxOCMAAMPhC.jpg",
+        "image": "https://pbs.twimg.com/media/BzbzYxOCMAAMPhC.jpg",
         "youTubeId": "ox6K6jI-azA"
       },
       "geometry": {
@@ -170,7 +170,7 @@ var projectData={
         "lastName": "Schwennesen",
         "description": "Enviropreneur and rancher Paul Schwennesen wants to regrow our agrarian roots. Working to preserve the West’s open, working landscapes, the Agrarian Freedom Project connects young, innovative ranchers with the resources they need to revitalize small-scale ranching, rural economies and communities, and conservation stewardship of working lands.",
         "url": "http://agrarianliberty.com",
-        "image": "http://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/0b5/2e3/1fce32a.jpg",
+        "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/0b5/2e3/1fce32a.jpg",
         "youTubeId": "sZYEMn9B5Gc"
       },
       "geometry": {
