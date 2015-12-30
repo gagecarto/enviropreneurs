@@ -6,7 +6,7 @@ var projectsLayer;
 
 var categoryColors={
 		'alumni':'#E1E747',
-		'private':'#764EAC'
+		'private':'#E1E747'
 	}
 
 var categoryLookup={

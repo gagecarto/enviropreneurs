@@ -255,4 +255,19 @@ body {
     text-decoration: underline !important;
     text-align: center;
   }
-
+#linkBox{
+  position: absolute;
+  z-index: 20;  
+  background-color: #2B694D;    
+  font-size: 0.8rem;
+  color: white;
+  padding: 0.5rem;  
+  text-align: center;
+  width:auto;
+  height: auto;
+  bottom:2rem;
+  right:0.8rem;
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px;    
+  border-radius: 4px;     
+}
