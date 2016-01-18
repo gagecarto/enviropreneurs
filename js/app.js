@@ -5,8 +5,8 @@ $(document).ready(function() {
 var projectsLayer;
 
 var categoryColors={
-		'alumni':'#E1E747',
-		'private':'#E1E747'
+		'alumni':'#379330',
+		'private':'#379330'
 	}
 
 var categoryLookup={

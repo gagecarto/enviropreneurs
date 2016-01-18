@@ -131,12 +131,16 @@ body {
 #layerToggleHolder{
   position: absolute;
   z-index: 15;
-  bottom:40px;
-  left: 25px;
+  bottom:2.5rem;
+  left: 0.5rem;
   background-color: #2B694D;  
   color: #fff;
   text-align: center;
   width: auto;
+  height:auto;
+  max-height: 50%;
+  overflow-y:auto;
+  overflow-x:hidden;
   -webkit-border-radius: 4px; 
   -moz-border-radius: 4px;    
   border-radius: 4px;     
@@ -149,13 +153,13 @@ body {
 .layerToggleButton{
   background-color: #8FB270;
   text-align: center;
-  margin: 5px;
-  font-size: 1.2rem;
+  margin: 0.2rem;
+  font-size: 1rem;
   font-weight: bold;
   text-transform: capitalize;
   width: 20rem;
-  height: 2rem;
-  padding-top: 0.4rem;
+  height: 1.5rem;
+  padding-top: 0.25rem;
   -webkit-border-radius: 4px; 
   -moz-border-radius: 4px;    
   border-radius: 4px;     
